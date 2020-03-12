@@ -2,6 +2,6 @@
 
 vue webpack muti entry
 
-https://github.com/zjoney/Webpack_multi_entry_configuration/blob/entry-vue3/images/4.gif
+![image](https://github.com/zjoney/Webpack_multi_entry_configuration/blob/entry-vue3/images/4.gif)
 
-![images](/blob/entry-vue3/images/4.gif)
+![image](/blob/entry-vue3/images/4.gif)
