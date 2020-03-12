@@ -63,9 +63,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     // you can customize output by editing /index.html
     // see https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
-      filename: process.env.NODE_ENV === 'testing'
-        ? 'entry.html'
-        : config.build.index,
+      filename: 'entry.html',
       template: 'index.html',
       chunks: ['manifest','vendor','entry'],
       inject: true,
@@ -80,9 +78,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       chunksSortMode: 'dependency'
     }),
     new HtmlWebpackPlugin({
-      filename: process.env.NODE_ENV === 'testing'
-        ? 'entry2.html'
-        : config.build.index,
+      filename: 'entry2.html',
       template: 'index.html',
       chunks: ['manifest','vendor','entry2'],
       inject: true,
