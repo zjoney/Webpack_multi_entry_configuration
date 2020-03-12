@@ -29,6 +29,7 @@ module.exports = {
 根据上面一小节我们知道，webpack 配置里的 output.filename 如果有 [name] 意为根据入口文件的名称，打包成对应名称的 JS 文件，那么现在我们是可以根据两个入口打包出 entry.js 和 entry2.js。
 
 打包的结果如下：
+
 ![image](https://github.com/zjoney/Webpack_multi_entry_configuration/blob/entry-vue3/images/1.png)
 
 ![image](https://github.com/zjoney/Webpack_multi_entry_configuration/blob/entry-vue3/images/4.gif)
