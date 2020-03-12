@@ -1,1 +1,1 @@
-# Webpack-muti_entry
+# Webpack_muti_entry
