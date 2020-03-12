@@ -1,6 +1,4 @@
-# multi-entry-vue
 
-> vue webpack muti entry
 
 ## Build Setup
 
