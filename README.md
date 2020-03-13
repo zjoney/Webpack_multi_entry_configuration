@@ -34,4 +34,8 @@ module.exports = {
 
 当前代码：Github - multi-entry-vue1
 
+如上图，此时我们 npm run build 打包出一个引用了这两个文件的 index.html，那么如何打包出不同 HTML 文件，分别应用不同入口 JS 文件呢，此时我们需要借助于 HtmlWebpackPlugin 这个插件。
+
+HtmlWebpackPlugin 这个插件， new 一个，就打包一个 HTML 页面，所以我们在 plugins 配置里 new 两个，就能打包出两个页面来。
+
 ![image](https://github.com/zjoney/Webpack_multi_entry_configuration/blob/entry-vue3/images/4.gif)
