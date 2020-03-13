@@ -69,6 +69,14 @@ module.exports = {
     ]
 }
 ```
+上面一个配置要注意的是 chunks，如果没有配置，那么生成的 HTML 会引入所有入口 JS 文件，在上面的例子就是，生成的两个 HTML 文件都会引入 entry.js 和 entry2.js，所以要使用 chunks 配置来指定生成的 HTML 文件应该引入哪个 JS 文件。配置了 chunks 之后，才能达到不同的 HTML 只引入对应 chunks 的 JS 文件的目的。
 
+大家可以看到除了我们打包生成的 chunk 文件 entry.js 和 entry2.js 之外，还有 manifest 和 vendor 这两个，这里稍微解释一下这两个 chunk：
+
+ 1. vendor 是指提取涉及 node_modules 中的公共模块；
+
+ 2. manifest 是对 vendor 模块做的缓存；
+
+ 
 
 ![image](https://github.com/zjoney/Webpack_multi_entry_configuration/blob/entry-vue3/images/4.gif)
