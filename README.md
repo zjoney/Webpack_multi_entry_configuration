@@ -41,6 +41,34 @@ HtmlWebpackPlugin 这个插件， new 一个，就打包一个 HTML 页面，所
 ### 3.3 打包出不同的 HTML 页面
 我们把配置文件改成下面这样：
 
+```javascript
+// build/webpack.base.conf.js
+module.exports = {
+  entry: {
+    entry1: './src/main.js', // 打包输出的chunk名为entry
+    entry2: './src/main2.js'
+  },
+  output: {
+    path: config.build.assetsRoot,
+    filename: '[name].js',
+    publicPath: process.env.NODE_ENV === 'production'
+      ? config.build.assetsPublicPath
+      : config.dev.assetsPublicPath
+  },
+
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'entry.html',
+      template: 'index.html',
+      chunks: ['manifest', 'vendor', 'entry'], //  输出的html文件引入的入口chunk
+    ],
+    new HtmlWebpackPlugin({
+      filename: 'entry2.html',
+      template: 'index.html',
+      chunks: ['manifest', 'vendor', 'entry2'], 
+    ]
+}
+```
 
 
 ![image](https://github.com/zjoney/Webpack_multi_entry_configuration/blob/entry-vue3/images/4.gif)
