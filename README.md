@@ -105,5 +105,10 @@ module.exports = {
 
 首先我们在根目录创建一个 entries 文件夹，把不同入口的 router、 store、 main.js 都放这里，每个入口相关单独放在一个文件夹；
 
+在 src 目录下建立一个 common 文件夹，用来存放多入口共用的组件等；
+
+现在的目录结构：
+
+
 
 
