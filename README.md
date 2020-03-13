@@ -38,4 +38,9 @@ module.exports = {
 
 HtmlWebpackPlugin 这个插件， new 一个，就打包一个 HTML 页面，所以我们在 plugins 配置里 new 两个，就能打包出两个页面来。
 
+### 3.3 打包出不同的 HTML 页面
+我们把配置文件改成下面这样：
+
+
+
 ![image](https://github.com/zjoney/Webpack_multi_entry_configuration/blob/entry-vue3/images/4.gif)
