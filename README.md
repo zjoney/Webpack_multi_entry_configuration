@@ -88,3 +88,8 @@ module.exports = {
 现在打包出来的样式正是我们所需要的，此时我们在 `dist` 目录下启动 `live-server`（如果你没安装的话可以先安装 `npm i-g live-server`），就可以看到效果出来了：
 
 ![image](https://github.com/zjoney/Webpack_multi_entry_configuration/blob/entry-vue3/images/4.gif)
+
+至此就实现了一个简单的多入口项目的配置。
+
+
+
