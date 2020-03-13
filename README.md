@@ -77,10 +77,12 @@ module.exports = {
 
  2. manifest 是对 vendor 模块做的缓存；
 
-打包完的结果如下
+打包完的结果如下:
+
 ![image](https://github.com/zjoney/Webpack_multi_entry_configuration/blob/entry-vue3/images/2.png)
 
 文件结构：
+
 ![image](https://github.com/zjoney/Webpack_multi_entry_configuration/blob/entry-vue3/images/3.png)
 
 
