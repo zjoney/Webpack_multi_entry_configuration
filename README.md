@@ -32,4 +32,6 @@ module.exports = {
 
 ![image](https://github.com/zjoney/Webpack_multi_entry_configuration/blob/entry-vue3/images/1.png)
 
+当前代码：Github - multi-entry-vue1
+
 ![image](https://github.com/zjoney/Webpack_multi_entry_configuration/blob/entry-vue3/images/4.gif)
