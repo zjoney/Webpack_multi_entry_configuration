@@ -109,6 +109,83 @@ module.exports = {
 
 现在的目录结构：
 
+```javascript
+.
+
+├── build
+
+├── config
+
+├── entries
+│   ├── entry1
+
+│   │   ├── router # entry1 的 router
+
+│   │   │   └── index.js
+
+│   │   ├── store # entry1 的 store
+
+│   │   │   └── index.js
+
+│   │   ├── App.vue # entry1 的根组件
+
+│   │   ├── index.html # entry1 的页面模版
+
+│   │   └── main.js # entry1 的入口
+
+│   └── entry2
+
+│       ├── router
+
+│       │   └── index.js
+
+│       ├── store
+
+│       │   └── index.js
+
+│       ├── App.vue
+
+│       ├── index.html
+
+│       └── main.js
+
+├── src
+
+│   ├── assets
+
+│   │   └── logo.png
+
+│   ├── components
+│       ├── HelloWorld.vue
+
+│       ├── test1.vue
+
+│       ├── test2.vue
+
+│       └── test3.vue
+
+│   ├── router
+
+│   │   └── index.js
+
+│   ├── App.vue
+
+│   ├── App2.vue # 新增的入口
+
+│   ├── main.js
+
+│   └── main2.js # 新增的入口
+
+├── static
+
+├── README.md
+
+├── index.html
+
+└── package.json
+```
+
+
 
 
 
